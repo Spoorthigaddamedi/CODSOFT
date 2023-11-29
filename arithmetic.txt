@@ -1,0 +1,33 @@
+def additon(a,b):
+    return a+b
+def subraction(a,b):
+    return a-b
+def multiplication(a,b):
+    return a*b
+def division(a,b):
+    if b==0:
+        return "Error in the divison"
+    else:
+        return a/b
+x=float(input("Enter the first number for operation:"))
+y=float(input("Enter the second number for operation:"))
+print("Choose the following options:")
+print("1.Addition")
+print("2.Subraction")
+print("3.Multiplication")
+print("4.Division")
+num=input("Enter your choice\n")
+if num in ('1','2','3','4'):
+    if num=='1':
+        output=addition(x,y)
+    elif num=='2':
+        output=subraction(x,y)
+    elif num=='3':
+        output=multiplication(x,y)
+    elif num=='4':
+        output=division(x,y)
+     
+    print(output) 
+else:
+    print("Enter the valid option")
+    
